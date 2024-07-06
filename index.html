@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .icon{
+            background-color: orange;
+            width: 100%;
+            height: 40px;
+            text-align: right;
+            padding-right: 20px;
+            padding-top: 2px;
+            padding-bottom: 4%;
+        }
+        .icon h3{
+            float: left;
+        }
+        .icon ul li{
+            display: inline-block;
+            margin: 0 5px;
+        }
+        
+        .id{
+            float: left;
+            background-color: rgb(10, 146, 170);
+            width: 100%;
+            height: 50px;
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-bottom: 15px;
+            
+        }
+        .id img{
+            width: 200px;
+            height: 35px;
+            padding-left: 3%;
+        }
+        .id ul{
+            float: right;
+            margin-right: 20px;
+        }
+        .id ul li{
+            display: inline-block;
+            margin: 0 5px;
+        }
+        .id ul li a:hover{
+            color: white;
+        }
+        a.active,a:hover{
+            text-decoration: none;
+            transition: .7s;
+        }
+        .content{
+            background-image: url(p1.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 0 5%;
+            height: 100vh;
+        }
+        * {
+          box-sizing: border-box;
+        }
+        
+        .column {
+          float: left;
+          width: 25%;
+          padding: 5px;
+          position: relative;
+        }
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        .column img{
+            height: 250px;
+            width: 300px;
+        }
+        .text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: lightcoral;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+        </style>
+     
+</head>
+<body>
+    <div class="icon">
+        <h3 style="position: absolute;">&nbsp;WELCOME TO VFLYER</h3>
+                <ul>
+                    <li>Follow Us:&nbsp;&nbsp;
+                        <a href="https://www.instagram.com/tech.octanet?igsh=bDh4NTVsNmpudDUx" target="_blank"><i class='fab fa-instagram' style='font-size:24px'></a></i>
+                    </li>
+                    <li>
+                         &nbsp;&nbsp;<a href="https://www.linkedin.com/company/octanetservices/" target="_blank"><i class="fa-brands fa-linkedin" style='font-size:24px'></a></i>
+                    </li>
+                </ul>
+    </div>
+    <div class="id">
+        <img src="pc1.jpg">
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a class="active" href="#">About</a></li>
+            <li><a class="active" href="#">Blog</a></li>
+            <li><a class="active" href="contact.html">Contact Us</a></li>
+
+        </ul>
+    </div>
+    <section class="content">
+        <h1 style="text-align: left; padding-top:  150px; font-size: 350%;">Find your own<br>happiness</h1>
+        <h4>Get 50% off for your first purchase</h4>
+        <button>SHOP NOW</button>
+    </section>    
+        <div class="row">
+          <div class="column">
+            <img src="img1.jpeg" alt="dresses">
+            <div class="text-block"><h2>Clothing Collection</h2></div> 
+          </div>
+          <div class="column">
+            <img src="img2.jpeg" alt="bags">
+            <div class="text-block"><h2>Bags Collection</h2></div> 
+          </div>
+          <div class="column">
+            <img src="img3.jpeg" alt="jewellery">
+            <div class="text-block"><h2>Jewellery Collection</h2></div> 
+          </div>
+          <div class="column">
+            <img src="img4.jpeg" alt="footwear">
+            <div class="text-block"><h2>Footwear Collection</h2></div> 
+          </div>
+        </div>
+        
+        
+</body>
+</html>
